@@ -4,10 +4,10 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Subversivetek | Technology That Democratizes</title>
-<meta name="description" content="Subversivetek Inc is a non-profit-driven company raising money and building value around disruptive technologies that democratize people's lives — creating abundance in intelligence, life essentials, and safety for the people.">
+<meta name="description" content="Subversivetek Inc is a North Carolina nonprofit corporation building disruptive technologies that democratize people's lives, and the supporting builder behind The Essentials Commons.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@800&display=swap" rel="stylesheet">
 <style>
   :root{
     --ink:#111111;
@@ -177,6 +177,64 @@
   .foot-col a:hover{color:var(--blue)}
   .foot-bottom{border-top:1px solid rgba(255,255,255,.08);padding-top:24px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;font-size:.84rem}
 
+
+  /* essentials commons */
+  .commons{background:#0b1410;color:var(--on-dark)}
+  .commons .sec-head .mono{color:#2ecc8c}
+  .commons .sec-head h2{color:var(--on-dark)}
+  .commons .sec-head p{color:var(--on-dark-mut)}
+  .ec-lockup{display:flex;align-items:center;gap:22px;margin-bottom:40px}
+  .ec-lockup svg{width:96px;height:96px;flex-shrink:0}
+  .ec-word small{display:block;font-family:"Inter","Space Grotesk",sans-serif;font-weight:800;font-size:.86rem;letter-spacing:.28em;color:#ffc440}
+  .ec-word strong{display:block;font-family:"Inter","Space Grotesk",sans-serif;font-weight:800;font-size:clamp(1.8rem,4.6vw,2.8rem);letter-spacing:-.02em;line-height:1.05;color:#EDEFF2}
+  .ec-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(46,204,140,.18);border:1px solid rgba(46,204,140,.18);border-radius:14px;overflow:hidden;margin-bottom:28px}
+  .ec-cell{background:#0b1410;padding:30px 26px}
+  .ec-cell .mono{display:block;color:#ffc440;margin-bottom:12px}
+  .ec-cell h3{font-size:1.14rem;font-weight:600;margin-bottom:8px;color:var(--on-dark)}
+  .ec-cell p{color:var(--on-dark-mut);font-size:.95rem}
+  .ec-pilot{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:18px;border:1px dashed rgba(255,196,64,.5);border-radius:14px;padding:24px 26px}
+  .ec-pilot p{color:var(--on-dark-mut);font-size:.97rem;max-width:640px}
+  .ec-pilot p strong{color:#ffc440;font-weight:600}
+  .btn.green{background:#2ecc8c;border-color:#2ecc8c;color:#06251a}
+  .btn.green:hover{background:#4fdba2}
+  .ec-note{margin-top:18px;font-size:.84rem;color:var(--on-dark-mut)}
+
+  /* commons engine */
+  .engine{background:#08100c;color:var(--on-dark);border-top:1px solid rgba(46,204,140,.12)}
+  .engine .sec-head .mono{color:#ffc440}
+  .engine .sec-head h2{color:var(--on-dark)}
+  .engine .sec-head p{color:var(--on-dark-mut)}
+  .engine-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+  .eng{border-top:2px solid #2ecc8c;padding-top:20px}
+  .eng h3{font-size:1.06rem;font-weight:600;margin-bottom:8px;color:var(--on-dark)}
+  .eng p{color:var(--on-dark-mut);font-size:.94rem}
+  .phase{display:inline-block;margin-top:34px;font-size:.92rem;color:var(--on-dark-mut);border-left:2px solid #ffc440;padding-left:16px;max-width:760px}
+
+  /* rateunveil */
+  .ru-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:56px;align-items:center}
+  .ru-badge{display:inline-block;font-family:"IBM Plex Mono";font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--blue-deep);background:rgba(49,163,225,.1);border:1px solid rgba(49,163,225,.3);border-radius:999px;padding:5px 12px;margin-bottom:18px}
+  .ru-body h2{font-size:clamp(1.9rem,4vw,2.6rem);font-weight:600;color:var(--slate);margin-bottom:18px}
+  .ru-body p{color:var(--slate-2);font-size:1.05rem;margin-bottom:16px}
+  .ru-body p strong{color:var(--slate)}
+  .ru-card{background:var(--ink);color:var(--on-dark);border-radius:16px;padding:28px}
+  .ru-card .mono{color:var(--blue);display:block;margin-bottom:18px}
+  .ru-row{display:flex;justify-content:space-between;align-items:center;padding:14px 0;border-bottom:1px solid rgba(255,255,255,.1);font-size:.95rem}
+  .ru-row:last-of-type{border-bottom:0}
+  .ru-row span:first-child{color:var(--on-dark)}
+  .ru-row span:last-child{font-family:"IBM Plex Mono";color:var(--on-dark-mut)}
+  .ru-row.best span:last-child{color:#2ecc8c}
+  .ru-foot{margin-top:14px;font-size:.8rem;color:var(--on-dark-mut)}
+
+  @media(max-width:920px){
+    .ec-grid{grid-template-columns:1fr}
+    .engine-grid{grid-template-columns:1fr 1fr}
+    .ru-grid{grid-template-columns:1fr;gap:36px}
+  }
+  @media(max-width:680px){
+    .engine-grid{grid-template-columns:1fr}
+    .ec-lockup svg{width:72px;height:72px}
+  }
+
   /* reveal */
   .reveal{opacity:0;transform:translateY(18px);transition:opacity .6s ease,transform .6s ease}
   .reveal.in{opacity:1;transform:none}
@@ -224,7 +282,8 @@
       <a href="#mission">Mission</a>
       <a href="#scarcity">The problem</a>
       <a href="#belief">What we believe</a>
-      <a href="#focus">Focus areas</a>
+      <a href="#commons">The Commons</a>
+      <a href="#rateunveil">RateUnveil</a>
       <a href="#model">How it works</a>
       <a href="#contact" class="btn">Join the mission</a>
     </nav>
@@ -242,12 +301,12 @@
   <div class="wrap hero-inner">
     <span class="eyebrow mono">
       <svg viewBox="0 0 24 48" fill="currentColor" aria-hidden="true"><path d="M15 1 L4 27 L11 27 L9 47 L20 19 L13 19 Z"/></svg>
-      Non-profit driven · Technology for the people
+      Nonprofit · Technology for the people
     </span>
     <h1>Technology should give people <em>leverage</em>, not take it from them.</h1>
-    <p class="lead">Subversivetek is a non-profit-driven company raising money and building value around disruptive technologies that democratize people's lives — turning science, technology, and abundant intelligence toward the essentials of life and the safety of people.</p>
+    <p class="lead">Subversivetek builds disruptive technologies that democratize people's lives, and it exists to support one project above all: The Essentials Commons, a cooperative effort to pull life's essentials out of captive markets.</p>
     <div class="hero-cta">
-      <a href="#mission" class="btn">Read our mission</a>
+      <a href="#commons" class="btn">See The Essentials Commons</a>
       <a href="#contact" class="btn ghost">Get involved</a>
     </div>
   </div>
@@ -261,15 +320,16 @@
       <div class="about-body">
         <span class="mono" style="color:var(--blue-deep);display:block;margin-bottom:16px">Our mission</span>
         <h2 style="font-size:clamp(1.9rem,4vw,2.6rem);font-weight:600;margin-bottom:22px;color:var(--slate)">Breaking artificial scarcity, in service of people.</h2>
-        <p>Much of what people pay too much for isn't scarce because the world can't supply enough of it. It's scarce because a captive market — patents, licensing, regulatory capture, vertical lock-in — is built to keep it that way. That scarcity is manufactured, not real, and it sits directly on top of life's essentials: health, energy, housing, food, information.</p>
-        <p><strong>Subversivetek raises money to put emphasis on R&D toward technologies that create abundance around that artificial scarcity</strong> — funding and building the disruptive tech that routes around captive markets, giving people leverage instead of leaving them paying a gatekeeper's price.</p>
-        <blockquote class="mission">Our mission is to use science, technology, and abundance around intelligence to unlock powerful innovations — and to direct those resources toward life's essentials and the safety of people.</blockquote>
+        <p>Much of what people pay too much for isn't scarce because the world can't supply enough of it. It's scarce because a captive market (patents, licensing, regulatory capture, vertical lock-in) is built to keep it that way. That scarcity is manufactured, not real, and it sits directly on top of life's essentials: energy, water, food, medicine, and housing.</p>
+        <p><strong>Subversivetek's core mission is to support The Essentials Commons.</strong> We develop the research and technology, raise funding and donations, and organize community contributions so the Commons can make essentials cheap through automation. Nobody profits privately from that outcome, and no entity involved is for sale.</p>
+        <blockquote class="mission">Survival should not be a captive market. Our mission is to use science, technology, and abundant intelligence to unlock powerful innovations and direct them toward life's essentials and the safety of people.</blockquote>
       </div>
       <div class="factbox">
         <span class="mono">At a glance</span>
-        <div class="factrow"><span>Structure</span><span>Non-profit-driven company</span></div>
+        <div class="factrow"><span>Structure</span><span>NC nonprofit corporation</span></div>
         <div class="factrow"><span>Purpose</span><span>Break artificial scarcity</span></div>
-        <div class="factrow"><span>Method</span><span>Fund R&D, build disruptive tech</span></div>
+        <div class="factrow"><span>Method</span><span>Build tech, fund the Commons</span></div>
+        <div class="factrow"><span>Core project</span><span>The Essentials Commons</span></div>
         <div class="factrow"><span>Serving</span><span>People, not gatekeepers</span></div>
         <div class="factrow"><span>Based in</span><span>Cary, North Carolina</span></div>
       </div>
@@ -283,18 +343,18 @@
     <div class="sec-head reveal">
       <span class="mono">The problem we target</span>
       <h2>Not all scarcity is real. We go after the kind that isn't.</h2>
-      <p>Real scarcity needs supply-side innovation — better science, better engineering, more of a genuinely limited thing. Artificial scarcity needs something different: routing around the captive market holding the price up.</p>
+      <p>Real scarcity needs supply-side innovation: better science, better engineering, more of a genuinely limited thing. Artificial scarcity needs something different: routing around the captive market holding the price up.</p>
     </div>
     <div class="belief-grid reveal">
       <div class="belief-cell no">
         <span class="mono">Real scarcity</span>
         <h3>A physical limit</h3>
-        <p>The resource, the manufacturing capacity, or the raw material genuinely isn't there yet. The fix is invention — new science, new materials, new supply.</p>
+        <p>The resource, the manufacturing capacity, or the raw material genuinely isn't there yet. The fix is invention: new science, new materials, new supply.</p>
       </div>
       <div class="belief-cell yes">
         <span class="mono">Artificial scarcity</span>
         <h3>A manufactured limit</h3>
-        <p>The capacity to serve people already exists, but patents, licensing cartels, regulatory capture, or vertical lock-in keep competitors out and prices high. The fix is disruption — breaking the gate, not the laws of physics.</p>
+        <p>The capacity to serve people already exists, but patents, licensing cartels, regulatory capture, or vertical lock-in keep competitors out and prices high. The fix is disruption: breaking the gate, not the laws of physics.</p>
       </div>
     </div>
   </div>
@@ -317,7 +377,7 @@
       <div class="belief-cell yes">
         <span class="mono">This</span>
         <h3>Technology as leverage</h3>
-        <p>Tools that multiply what a person can do, own, and understand — capability in their hands, on their terms.</p>
+        <p>Tools that multiply what a person can do, own, and understand, with capability in their hands, on their terms.</p>
       </div>
       <div class="belief-cell no">
         <span class="mono">Not this</span>
@@ -345,17 +405,17 @@
       <div class="card">
         <span class="tag"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M14 2 L4 14 L11 14 L10 22 L20 10 L13 10 Z"/></svg></span>
         <h3>Abundant intelligence</h3>
-        <p>Putting the power of AI and advanced computing into ordinary hands — intelligence as a public resource, not a metered privilege.</p>
+        <p>Putting the power of AI and advanced computing into ordinary hands, treating intelligence as a public resource, not a metered privilege.</p>
       </div>
       <div class="card">
         <span class="tag"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M14 2 L4 14 L11 14 L10 22 L20 10 L13 10 Z"/></svg></span>
         <h3>Life essentials</h3>
-        <p>Backing R&D that breaks captive markets in food, energy, water, housing, and health — the resources every life runs on.</p>
+        <p>Backing R&D that breaks captive markets in food, energy, water, housing, and medicine, the resources every life runs on.</p>
       </div>
       <div class="card">
         <span class="tag"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M14 2 L4 14 L11 14 L10 22 L20 10 L13 10 Z"/></svg></span>
         <h3>Safety of people</h3>
-        <p>Technology that protects — personal security, resilient systems, and safeguards that answer to the people they serve.</p>
+        <p>Technology that protects: personal security, resilient systems, and safeguards that answer to the people they serve.</p>
       </div>
       <div class="card">
         <span class="tag"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M14 2 L4 14 L11 14 L10 22 L20 10 L13 10 Z"/></svg></span>
@@ -365,13 +425,100 @@
       <div class="card">
         <span class="tag"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M14 2 L4 14 L11 14 L10 22 L20 10 L13 10 Z"/></svg></span>
         <h3>Open markets</h3>
-        <p>Funding the disruption of captive markets, so access to essential resources is decided by need and effort — not by whoever holds the gate.</p>
+        <p>Funding the disruption of captive markets, so access to essential resources is decided by need and effort, not by whoever holds the gate.</p>
       </div>
       <div class="card">
         <span class="tag"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M14 2 L4 14 L11 14 L10 22 L20 10 L13 10 Z"/></svg></span>
         <h3>Science in service</h3>
-        <p>Translating research and engineering into things people can actually use — practical innovation over prestige.</p>
+        <p>Translating research and engineering into things people can actually use, with practical innovation over prestige.</p>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ THE ESSENTIALS COMMONS ============ -->
+<section class="band commons" id="commons">
+  <div class="wrap">
+    <div class="ec-lockup reveal" role="img" aria-label="The Essentials Commons logo">
+      <svg viewBox="18 18 164 164" aria-hidden="true"><polygon points="100.0,76.0 120.8,88.0 120.8,112.0 100.0,124.0 79.2,112.0 79.2,88.0" fill="#ffc440"/><polygon points="145.0,51.5 164.5,62.8 164.5,85.2 145.0,96.5 125.5,85.2 125.5,62.8" fill="none" stroke="#ffc440" stroke-width="5" stroke-dasharray="7 7" stroke-linejoin="round"/><polygon points="145.0,103.5 164.5,114.8 164.5,137.2 145.0,148.5 125.5,137.2 125.5,114.8" fill="#2ecc8c"/><polygon points="100.0,129.5 119.5,140.8 119.5,163.2 100.0,174.5 80.5,163.2 80.5,140.8" fill="#2ecc8c"/><polygon points="55.0,103.5 74.5,114.8 74.5,137.2 55.0,148.5 35.5,137.2 35.5,114.8" fill="#2ecc8c"/><polygon points="55.0,51.5 74.5,62.8 74.5,85.2 55.0,96.5 35.5,85.2 35.5,62.8" fill="#2ecc8c"/><polygon points="100.0,25.5 119.5,36.8 119.5,59.2 100.0,70.5 80.5,59.2 80.5,36.8" fill="#2ecc8c"/></svg>
+      <div class="ec-word"><small>THE</small><strong>Essentials Commons</strong></div>
+    </div>
+    <div class="sec-head reveal">
+      <span class="mono">The project we exist to support</span>
+      <h2>Life's essentials, out of captive markets.</h2>
+      <p>The Essentials Commons is a cooperative, open-source effort to use automation to make energy, water, food, medicine, and housing really cheap. Not free: cheap, by removing the gatekeeper overhead baked into the price of survival. Capitalism stays optional and points at luxuries. Essentials get their own lane.</p>
+    </div>
+    <div class="ec-grid reveal">
+      <div class="ec-cell">
+        <span class="mono">Subversivetek</span>
+        <h3>The supporting builder</h3>
+        <p>Develops the R&D and technology, raises funding and donations, and runs community-based contributions for the Commons.</p>
+      </div>
+      <div class="ec-cell">
+        <span class="mono">Mission lock</span>
+        <h3>A separate, clean nonprofit</h3>
+        <p>Holds the mission and protected assets so lobbyists, buyouts, and gatekeeper capital cannot steer or purchase the Commons.</p>
+      </div>
+      <div class="ec-cell">
+        <span class="mono">Local co-ops</span>
+        <h3>Community-owned machines</h3>
+        <p>Local cooperatives own and operate the physical infrastructure. Contributors get paid like a job; nobody privately holds shares or profits.</p>
+      </div>
+    </div>
+    <div class="ec-pilot reveal">
+      <p><strong>Pilot 01: solar generation plus battery storage.</strong> We are seeking pilot sites and technical or feasibility collaborators. Funding follows the Linux model: the people and companies who rely on it help fund it, alongside donations and contributions. No banks, no venture capital, no fee-based brokers.</p>
+      <a class="btn green" href="mailto:support@subversivetek.com?subject=The%20Essentials%20Commons">Contribute or collaborate</a>
+    </div>
+    <p class="ec-note reveal">Subversivetek Inc. is a North Carolina nonprofit corporation and is not a 501(c)(3). Donations made directly to Subversivetek are not tax-deductible.</p>
+  </div>
+</section>
+
+<!-- ============ THE COMMONS ENGINE ============ -->
+<section class="band engine" id="engine">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="mono">Long-term phase</span>
+      <h2>The Commons Engine.</h2>
+      <p>A self-governing custodian without human ego in the system. The Commons Engine is the long-term AI layer that keeps the Commons serving its outcome, producing life's essentials, instead of drifting into serving itself.</p>
+    </div>
+    <div class="engine-grid reveal">
+      <div class="eng">
+        <h3>Many models, many frames</h3>
+        <p>Built as multiple models acting as agencies with different frames of reference, trained on the plurality of the people behind it.</p>
+      </div>
+      <div class="eng">
+        <h3>Contributed, not taken</h3>
+        <p>Trained on data people willingly contribute to serve the cause, the opposite of the current extract-first AI model.</p>
+      </div>
+      <div class="eng">
+        <h3>Stewards, not owners</h3>
+        <p>Accountable human stewards under a cooperative structure serve the community and the mission. The machine is the engine, not the owner.</p>
+      </div>
+      <div class="eng">
+        <h3>Owned by no one</h3>
+        <p>The governance method is published openly as prior art, so no one, including us, can ever patent or own it.</p>
+      </div>
+    </div>
+    <p class="phase reveal">The Commons starts simple: open-source software powering automated machines owned by co-ops. The Engine comes later, once funding exists and the system can be continuously retested against a live community.</p>
+  </div>
+</section>
+
+<!-- ============ RATEUNVEIL ============ -->
+<section class="band" id="rateunveil" style="background:var(--paper-2)">
+  <div class="wrap ru-grid reveal">
+    <div class="ru-body">
+      <span class="ru-badge">In development</span>
+      <h2>RateUnveil: see the outcome before you apply.</h2>
+      <p>RateUnveil is a Subversivetek tool that predicts your loan approval outcomes before you ever submit an application: which lenders are likely to say yes, and at roughly what rate. Lenders already hold that information. RateUnveil puts it on your side of the table.</p>
+      <p>When people can't see their options, they treat the first approval as a lifeboat and lock in whatever rate is on the table for years. <strong>Know your odds first, and your first yes is never your only option.</strong></p>
+      <p>RateUnveil is also how the mission pays for itself: revenue it earns, after operating costs, helps fund The Essentials Commons.</p>
+    </div>
+    <div class="ru-card" aria-label="Illustrative RateUnveil preview">
+      <span class="mono">Example preview · Auto loan</span>
+      <div class="ru-row best"><span>Lender A</span><span>Likely · lower rate</span></div>
+      <div class="ru-row"><span>Lender B</span><span>Likely · mid rate</span></div>
+      <div class="ru-row"><span>Lender C</span><span>Unlikely</span></div>
+      <p class="ru-foot">Illustration only. Not a real quote, offer, or credit decision.</p>
     </div>
   </div>
 </section>
@@ -382,7 +529,7 @@
     <div class="sec-head reveal">
       <span class="mono">How it works</span>
       <h2>A mission-first model.</h2>
-      <p>We operate as a non-profit-driven company: value we build and money we raise are fuel for the mission, not the point of it.</p>
+      <p>Value we build and money we raise are fuel for the mission, not the point of it. Revenue from our tools flows back to The Essentials Commons.</p>
     </div>
     <div class="steps reveal">
       <div class="step">
@@ -391,7 +538,7 @@
       </div>
       <div class="step">
         <h3>Build</h3>
-        <p>We build real value — products, systems, and know-how — around those technologies.</p>
+        <p>We build real products, like RateUnveil, plus the systems and know-how behind them.</p>
       </div>
       <div class="step">
         <h3>Democratize</h3>
@@ -399,7 +546,7 @@
       </div>
       <div class="step">
         <h3>Reinvest</h3>
-        <p>What comes back goes back — into the essentials of life and the safety of the people we serve.</p>
+        <p>After our own operating costs, a set percentage of revenue is donated to The Essentials Commons to build its automation and, later, the Commons Engine.</p>
       </div>
     </div>
   </div>
@@ -433,7 +580,7 @@
       </div>
       <div class="contact-cta">
         <h3>Partner, contribute, or build with us</h3>
-        <p>Whether you want to support the mission, bring a disruptive technology forward, or put these tools to work in your community — reach out.</p>
+        <p>Whether you want to support the mission, bring a disruptive technology forward, or put these tools to work in your community, reach out.</p>
         <a class="btn" href="mailto:support@subversivetek.com?subject=Joining%20the%20mission">Email us</a>
       </div>
     </div>
@@ -446,7 +593,7 @@
     <div class="foot-top">
       <div class="foot-brand">
         <a href="#top" class="brand"><b>Subversive<span>tek</span></b></a>
-        <p>A non-profit-driven company building value around disruptive technologies that democratize people's lives.</p>
+        <p>A North Carolina nonprofit building disruptive technologies that democratize people's lives, and the supporting builder of The Essentials Commons.</p>
       </div>
       <div class="foot-cols">
         <div class="foot-col">
@@ -454,6 +601,8 @@
           <a href="#mission">Our mission</a>
           <a href="#belief">What we believe</a>
           <a href="#focus">Focus areas</a>
+          <a href="#commons">The Essentials Commons</a>
+          <a href="#rateunveil">RateUnveil</a>
           <a href="#model">How it works</a>
         </div>
         <div class="foot-col">
