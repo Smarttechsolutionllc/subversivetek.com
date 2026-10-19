@@ -224,6 +224,16 @@
   .ru-row span:last-child{font-family:"IBM Plex Mono";color:var(--on-dark-mut)}
   .ru-row.best span:last-child{color:#2ecc8c}
   .ru-foot{margin-top:14px;font-size:.8rem;color:var(--on-dark-mut)}
+  .ru-block{margin-top:72px}
+  .ru-block .mono{color:var(--blue-deep);display:block;margin-bottom:16px}
+  .ru-block h3{font-size:clamp(1.6rem,3.4vw,2.3rem);font-weight:600;color:var(--slate);margin-bottom:16px;max-width:680px}
+  .ru-block > p{color:var(--slate-2);font-size:1.05rem;max-width:720px}
+  .ru-block .grid3{margin-top:28px}
+  .ru-block .card .ru-badge{margin-bottom:14px}
+  .ru-list{list-style:none;margin-top:28px;max-width:720px}
+  .ru-list li{position:relative;padding:10px 0 10px 22px;color:var(--slate-2);font-size:1rem;border-bottom:1px solid var(--mist)}
+  .ru-list li:last-child{border-bottom:0}
+  .ru-list li::before{content:"";position:absolute;left:0;top:19px;width:7px;height:7px;border-radius:50%;background:var(--blue)}
 
   @media(max-width:920px){
     .ec-grid{grid-template-columns:1fr}
@@ -233,6 +243,7 @@
   @media(max-width:680px){
     .engine-grid{grid-template-columns:1fr}
     .ec-lockup svg{width:72px;height:72px}
+    .ru-block{margin-top:56px}
   }
 
   /* reveal */
@@ -520,6 +531,81 @@
       <div class="ru-row"><span>Lender C</span><span>Unlikely</span></div>
       <p class="ru-foot">Illustration only. Not a real quote, offer, or credit decision.</p>
     </div>
+  </div>
+
+  <div class="wrap ru-block reveal">
+    <span class="mono">Independent by design</span>
+    <h3>Paid by no lender. Ever.</h3>
+    <p>Many tools that show approval odds earn referral fees from the lenders they rank. That makes the lender the customer and the borrower the product being delivered. RateUnveil is built the other way around. Lenders never pay us for placement, referrals, leads, or data, and your results are ranked by one thing only: your outcome.</p>
+  </div>
+
+  <div class="wrap ru-block reveal">
+    <span class="mono">No applications</span>
+    <h3>Shop first. Apply only if you choose.</h3>
+    <div class="grid3">
+      <div class="card">
+        <h3>Describe your situation</h3>
+        <p>Share the details lenders care about. Nothing is sent to any lender.</p>
+      </div>
+      <div class="card">
+        <h3>See your options</h3>
+        <p>Predicted approval odds and estimated rates across lenders, each with a confidence level. When the data is thin, RateUnveil says so.</p>
+      </div>
+      <div class="card">
+        <h3>Decide on your terms</h3>
+        <p>Compare, wait, or walk away. You choose if, when, and where to apply.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrap ru-block reveal">
+    <span class="mono">Leverage on your side</span>
+    <h3>Knowing your odds is the start. Negotiating power is the point.</h3>
+    <p>RateUnveil is being built to turn what you know into pressure lenders feel. Each feature below is planned and in development.</p>
+    <div class="grid3">
+      <div class="card">
+        <span class="ru-badge">Planned</span>
+        <h3>Rate-match requests</h3>
+        <p>Already holding an offer? RateUnveil drafts a written request asking your own bank or credit union to match it.</p>
+      </div>
+      <div class="card">
+        <span class="ru-badge">Planned</span>
+        <h3>Reverse shopping</h3>
+        <p>Post an anonymized borrower profile and let lenders compete to offer you terms. Lenders pay nothing to participate, and offers are ranked only by total cost to you.</p>
+      </div>
+      <div class="card">
+        <span class="ru-badge">Planned</span>
+        <h3>Denial decoder</h3>
+        <p>Turned down somewhere? Upload the denial notice and RateUnveil translates the stated reasons into a plan, plus the lenders more likely to approve your profile.</p>
+      </div>
+      <div class="card">
+        <span class="ru-badge">Planned</span>
+        <h3>Refinance watchdog</h3>
+        <p>After you borrow, RateUnveil keeps watching and alerts you when you likely qualify for a better rate. A loan you took yesterday shouldn't trap you for years.</p>
+      </div>
+      <div class="card">
+        <span class="ru-badge">Planned</span>
+        <h3>Advertised vs. delivered</h3>
+        <p>Public scorecards showing the gap between what each lender advertises and what RateUnveil users actually receive.</p>
+      </div>
+      <div class="card">
+        <span class="ru-badge">Planned</span>
+        <h3>Pooled borrowing</h3>
+        <p>Borrowers with similar needs, grouped together to negotiate rates as a bloc with credit unions and community lenders.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrap ru-block reveal">
+    <span class="mono">Our commitments</span>
+    <h3>Transparency you can check.</h3>
+    <ul class="ru-list">
+      <li>Lenders never pay RateUnveil for placement, referrals, leads, or data.</li>
+      <li>Seeing your odds and rates never requires an application or a hard credit inquiry.</li>
+      <li>Your data is never sold. It reaches a lender only when you choose to share it.</li>
+      <li>Every prediction shows its confidence level. No false precision.</li>
+      <li>Every RateUnveil funding source will be published on this page before launch.</li>
+    </ul>
   </div>
 </section>
 
